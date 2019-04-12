@@ -1,0 +1,166 @@
+@import './var.less';
+/* 组件标题 */
+.el-form-item__error {
+  white-space: nowrap
+}
+.component-title {
+  position: relative;
+  padding-left: 18px;
+  font-size: 26px;
+  line-height: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 26px;
+    background-color: @light-blue;
+    border-radius: 5px;
+  }
+}
+
+#app {
+  /* 表头样式 */
+  .el-table {
+    text-align: center;
+    thead tr {
+      background-color: #f6f7fb;
+      th {
+        text-align: center;
+      }
+    }
+  }
+  /* 分页器样式 */
+  .el-pagination {
+    padding: 0;
+    margin-top: 30px;
+  }
+}
+
+/* 清除浮动 */
+
+.clearfix {
+  zoom: 1;
+  &::after {
+    content: '';
+    display: block;
+    clear: both;
+    opacity: 0;
+  }
+}
+
+/* 文本省略 */
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 浮动 */
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #c8d8f0;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #4880ce;
+}
+
+.m-head {
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  color: #333;
+  .blue-border {
+    display: inline-block;
+    height: 26px;
+    width: 5px;
+    border-radius: 2.5px;
+    background: #0072ff
+  }
+  .m-title {
+    padding-left: 12px;
+    line-height: 1;
+  }
+}
+
+.linksign__title {
+  margin-bottom: 25px;
+}
+
+/* 列表查询的表单头部样式 */
+
+.public-filter-form {
+  .filter-form {
+    margin: 30px 0;
+    padding: 30px 50px 10px;
+    border-radius: 5px;
+    background: #fff;
+  }
+}
+
+/* 表格头部样式 */
+
+.public-table-head {
+  background: #e4edfb !important;
+  height: 68px !important;
+  font-weight: bold !important;
+}
+
+/* 位置提示 */
+
+.hint_site {
+  background: #fff;
+  padding: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+// 表格样式
+.div_table {
+  margin-top: 15px;
+}
+
+.tab_paging {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.line_clamp {
+  width: 90%;
+  overflow: hidden;
+
+}
+
+.navSet .el-tree-node__content {
+  padding: 30px !important;
+}
+
+.navSet .el-tree-node__children {
+  padding-left: 15px !important;
+}
+
+.navSet .el-icon-caret-right {
+  font-size: 22px !important;
+}

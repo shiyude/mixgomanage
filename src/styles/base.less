@@ -1,0 +1,152 @@
+/* 重置样式 */
+
+body,
+div,
+span,
+header,
+footer,
+nav,
+section,
+aside,
+article,
+ul,
+dl,
+dt,
+dd,
+li,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i,
+b,
+textarea,
+button,
+input,
+select,
+figure,
+figcaption {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+  text-decoration: none;
+  border: none;
+  font: inherit;
+  box-sizing: border-box;
+  font-family: 'Microsoft YaHei';
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  &:focus {
+    outline: none;
+  }
+  .clearfix {
+    zoom: 1;
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+      opacity: 0;
+    }
+  }
+}
+
+html,
+body {
+  // overflow: hidden;
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  .el-submenu__title i {
+    color: #fff;
+  }
+  .el-table {
+    .cell {
+      height: 40px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+// 预览图片
+.body__img__preview {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(102, 102, 102, .98);
+  z-index: 9999999;
+  text-align: center;
+  overflow: auto;
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+  }
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 auto;
+    width: auto;
+    max-width: 1200px;
+  }
+}
+
+.body__img__close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  border: 1px solid red;
+  right: 0px;
+  top: 4px;
+  background: red;
+  cursor: pointer;
+  &::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: white;
+  }
+  &::after {
+    content: '';
+    width: 1px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: inline-block;
+    background: white;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
